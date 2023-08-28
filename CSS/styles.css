@@ -33,6 +33,9 @@ p {
 .mountain{
     /* position: absolute;  */
     margin: 60px auto 0 auto;
+    max-width: 100%;  
+    min-width: 10%; 
+    height: auto; 
 }
 
 

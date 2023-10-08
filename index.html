@@ -8,14 +8,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
     <title>Gaurav Malpedi</title> 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
     <link rel="icon" href="favicon.rakoondog.ico">  
 </head>
+<body> 
 
+  <div style="background-color: rgba(63, 127, 191, 0.1);">
+  <section class="colored-section" id="title">
 
-<body>
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand top-brand" href="">thisIsDizzy</a>  
+
+        <button class="navbar-toggler dash" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link top-text" href="#boutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top-text" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link top-text" href="#contact">Contact</a> 
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+  </section> 
+  </div>
+
     <div class="top-container" id="web">  
         <img class="cl1" src="images/cloud-1.png" alt="cloud-image">  
         <h1>I'm Gaurav</h1>
@@ -25,15 +69,15 @@
     </div>
 
     <div class="middle-container">
-        <div class="profile">
+        <div class="profile" id="boutme">
           <img class="profpic" src="images/wc_3.jpg" alt="Profile Pic"> 
           <h2><span>Hello.</span></h2>
-          <p class="profilep">I'm Gaurav Malpedi, 3rd year student, Web design and deveplopment enthusiast, Sports & Music lover, Explorer</p> 
+          <p class="profilep">I'm Gaurav Malpedi, Web design and deveplopment enthusiast, Sports & Music lover, Explorer</p> 
         </div>
 
         <hr>
 
-        <div class="skills">
+        <div class="skills" id="skills"> 
           <h2>My Skills.</h2>
           <div class="skill-row">
             <img class="sk2img" src="images//python.png" alt="Python">
@@ -44,7 +88,7 @@
             <!-- <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Flat Icons - Flaticon</a> -->
             <img class="sk1img" src="images/WebDevImg2.jpg" alt="WebDev">
             <h3>Design & Development</h3>
-            <p>The combination of my passion for design, code & interaction positions me in a unique place in the web design world. <a href="https://deploy-web-1.vercel.app/" target="_blank">CheckMeOut</a> </p> 
+            <p>The combination of my passion for design, code & interaction positions me in a unique place in the web design world. <a href="https://deploy-web-1.vercel.app/" target="_blank" class="footer-link" style="padding-left: -40px;">CheckMeOut</a> </p> 
           </div>
           <div class="skill-row">
             <img class="sk3img" src="images/DSA_pic.png" alt="DSA">  
@@ -61,13 +105,14 @@
           <h3>To get in touch with me</h3> 
           <p>Click the button below to mail me directly on my personal gmail!!!</p>
           <br>
-          <a class="btn" href="mailto:gaurav.appleid17@gmail.com" target="_blank">CONTACT ME</a> 
+          <!-- <a class="btn" href="mailto:gaurav.appleid17@gmail.com" target="_blank">CONTACT ME</a>  -->
+          <button type="button" class="btn btn-outline-info">CONTACT ME</button>
           <br><br><br> 
         </div>
       </div>
     
       
-    <div class="bottom-container">
+    <div class="bottom-container" id="contact">
       <br><br>
       <a class="footer-link" href="https://www.linkedin.com/in/gaurav-malpedi-21a885231/" target="_blank">LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/GauravNBA" target="_blank">Twitter</a>
@@ -75,6 +120,7 @@
       <p class="ftp">© Drizzy</p>   
       <p>Inspired by ~ Shawn Halpin</p> 
     </div> 
+
 
 </body>
 </html>

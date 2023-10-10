@@ -36,5 +36,37 @@ function displayCurrentDate() {
     var currentDate = new Date();
     console.log("Current date: " + currentDate.toDateString()); 
 }
-    
 
+
+// JavaScript Classes and Objects 
+
+class Person {
+    constructor(name, age, occupation) {
+        this.name = name; this.age = age;
+        this.occupation = occupation;
+    }
+    introduce() {
+        console.log(`Hello, I'm ${this.name}, a ${this.age}-year-old ${this.occupation}.`);
+    }
+} 
+
+const person = new Person("Your Name", 20, "Software Engineer"); 
+
+// JavaScript Event Handling 
+
+const stringManipulationButton = document.querySelector(".btn-primary"); 
+const arrayOperationsButton = document.querySelector(".btn-secondary"); 
+const displayDateButton = document.querySelector(".btn-success"); 
+stringManipulationButton.addEventListener("click", manipulateString); 
+arrayOperationsButton.addEventListener("click", operateArray); 
+displayDateButton.addEventListener("click", displayCurrentDate);  
+
+// JavaScript Error Handling 
+
+try { // Attempting an operation that may throw an error 
+    const result = 10 / 0;
+    console.log("Result:", result);
+} catch (error) { // Handling the error
+    console.error("An error occurred:", error);
+}
+         

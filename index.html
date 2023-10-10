@@ -32,7 +32,12 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark">
 
-        <a class="navbar-brand top-brand" href="">thisIsDizzy</a>  
+        <div style="display: flex; align-items: center;">   
+          <a class="navbar-brand top-brand" id="dizzy">thisIsDizzy</a>    
+          <button onclick="onpressed()" style="margin: auto; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">I am</button>
+          <button onclick="onTap()" style="margin-left: 10px; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">+</button>     
+          <a class="navbar-brand top-brand" id="age" style="margin-left: 10px;">20</a>  
+        </div>
 
         <button class="navbar-toggler dash" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +67,7 @@
 
     <div class="top-container" id="web">  
         <img class="cl1" src="images/cloud-1.png" alt="cloud-image">  
-        <h1>I'm Gaurav</h1>
+        <h1 id="try">I'm Gaurav</h1> 
         <p class="apro">a <span class="pro">pro</span>grammer</p> 
         <img class="cl2" src="images/cloud-1.png" alt="cloud-image"> 
         <img class="mountain" src="images/mountain-1.png" alt="mountain-image">    
@@ -121,6 +126,7 @@
       <p>Inspired by ~ Shawn Halpin</p> 
     </div> 
 
+    <script src="index.js"></script> 
 
 </body>
 </html>

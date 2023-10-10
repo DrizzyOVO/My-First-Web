@@ -34,9 +34,9 @@
 
         <div style="display: flex; align-items: center;">   
           <a class="navbar-brand top-brand" id="dizzy">thisIsDizzy</a>    
-          <button onclick="onpressed()" style="margin: auto; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">I am</button>
-          <button onclick="onTap()" style="margin-left: 10px; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">+</button>     
-          <a class="navbar-brand top-brand" id="age" style="margin-left: 10px;">20</a>  
+          <button onclick="setName()" style="margin: auto; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">setName</button>
+          <button onclick="incrementAge()" style="margin-left: 10px; background-color: #44aaaaed; border-radius: 10px; color: white; border-style: none; padding: auto;">+</button>     
+          <a class="navbar-brand top-brand" id="Age" style="margin-left: 10px;">20</a>  
         </div>
 
         <button class="navbar-toggler dash" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
@@ -119,9 +119,9 @@
       
     <div class="bottom-container" id="contact">
       <br><br>
-      <a class="footer-link" href="https://www.linkedin.com/in/gaurav-malpedi-21a885231/" target="_blank">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/GauravNBA" target="_blank">Twitter</a>
-      <a class="footer-link" href="#web">Website</a>
+      <a class="footer-link" onclick="operateArray()" style="text-decoration: none; color: #11999E;">LinkedIn</a>
+      <a class="footer-link" onclick="manipulateString()" style="text-decoration: none; color: #11999E;">Twitter</a>
+      <a class="footer-link" onclick="displayCurrentDate()" style="text-decoration: none; color: #11999E;">Website</a>
       <p class="ftp">© Drizzy</p>   
       <p>Inspired by ~ Shawn Halpin</p> 
     </div> 

@@ -1,22 +1,40 @@
 let Name="Gaurav"; 
 let age; 
 
-function onpressed(){
-
-    if(document.getElementById("dizzy").innerHTML=="thisIsDizzy"){
-        document.getElementById("dizzy").innerHTML="dizzyIsSicko";
-    } else{
-        document.getElementById("dizzy").innerHTML="thisIsDizzy";  
+function setName() {
+    var name = prompt("Enter your name:"); 
+    if (name != null && name != "") {
+        document.getElementById("dizzy").textContent = name; 
     }
+}   
 
+function incrementAge() {
+    var currentAge = parseInt(document.getElementById("Age").textContent); 
+    var newAge = currentAge + 5;
+    document.getElementById("Age").textContent = newAge;
+}
+     
+// JavaScript Array Operations 
+function operateArray() {
+    var cars = ["Maybach", "Chiron", "LaFerrari"]; 
+    console.log("Cars Array:", cars); 
+    cars.push("Phantom"); // Add an element to the end  
+    console.log("After pushing Phantom:", cars); 
+    cars.pop(); // Remove the last element 
+    console.log("After popping:", cars); 
 }
 
-function onTap(){
-    age=document.getElementById("age").innerHTML; 
+// JavaScript String Manipulation 
+function manipulateString() {
+    var originalString = "Hello, World!"; 
+    var modifiedString = originalString.replace("World", "JavaScript"); 
+    console.log(modifiedString);
+}
 
-    for(let i=0;i<5;i++){ 
-        age++;  
-    } 
-    document.getElementById("age").innerHTML=age; 
-} 
+// JavaScript Date Usage 
+function displayCurrentDate() {
+    var currentDate = new Date();
+    console.log("Current date: " + currentDate.toDateString()); 
+}
+    
 
